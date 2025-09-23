@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">What's Your Aesthetic? 𐙚˙✧˖°📷 ༘ ⋆｡ ˚</h1>
+
+    <p id="description">Wondering which aesthetic matches both your vibe and your wardrobe? Take this quick quiz to find out your aesthetic!</p>
+
+  <form id="survey-form">
+
+    <label for="name" id="name-label">What's your name?</label>
+    <input required id="name" type="text" placeholder="e.g John Doe">
+    
+
+    <label for="email" id="email-label">What's your email?</label>
+    <input required id="email" type="email" placeholder="e.g fake123@email.com">
+
+    <label for="number" id="number-label">How confident are you about your style on a scanle from 1-10?</label>
+    <input id="number" type="number" min="1" max="10" placeholder="e.g 7">
+
+    
+    <label for="dropdown">What's your favorite aesthetic?</label>
+    <select id="dropdown">
+      <option>Grunge</option>
+      <option>Y2K</option>
+      <option>Soft Girl</option>
+      <option>Cottagecore</option>
+      <option selected>Unsure</option>
+    </select>
+
+    <legend>Select a color palette</legend>
+
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  </body>
+</html>
