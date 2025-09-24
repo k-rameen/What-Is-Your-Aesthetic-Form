@@ -11,32 +11,55 @@
     <p id="description">Wondering which aesthetic matches both your vibe and your wardrobe? Take this quick quiz to find out your aesthetic!</p>
 
   <form id="survey-form">
+    <fieldset>
+      <legend>Personal Info.</legend>
+      <label for="name" id="name-label">What's your name?<br/></label>
+      <input required id="name" type="text" placeholder="e.g John Doe">
 
-    <label for="name" id="name-label">What's your name?</label>
-    <input required id="name" type="text" placeholder="e.g John Doe">
+      <label for="email" id="email-label"><br/><br/>What's your email?<br/></label>
+      <input required id="email" type="email" placeholder="e.g fake123@email.com">
+    </fieldset>
+    <br/>
+    <fieldset>
+      <legend>Discover Your Style</legend>
+      <label for="number" id="number-label">How confident are you about your style on a scale from 1-10? <br/></label>
+      <input id="number" type="number" min="1" max="10" placeholder="e.g 7">
     
-
-    <label for="email" id="email-label">What's your email?</label>
-    <input required id="email" type="email" placeholder="e.g fake123@email.com">
-
-    <label for="number" id="number-label">How confident are you about your style on a scanle from 1-10?</label>
-    <input id="number" type="number" min="1" max="10" placeholder="e.g 7">
-
     
-    <label for="dropdown">What's your favorite aesthetic?</label>
-    <select id="dropdown">
-      <option>Grunge</option>
-      <option>Y2K</option>
-      <option>Soft Girl</option>
-      <option>Cottagecore</option>
-      <option selected>Unsure</option>
-    </select>
+      <label for="dropdown"><br/><br/>What's your favorite aesthetic?<br/></label>
+      <select id="dropdown">
+        <option>Grunge</option>
+        <option>Y2K</option>
+        <option>Soft Girl</option>
+        <option>Cottagecore</option>
+        <option selected>Unsure</option>
+      </select>
 
-    <legend>Select a color palette</legend>
-    <input type="radio" id="color">
-    <label for="color">Pastel</label>
+      <legend><br/>Select a color palette:</legend>
+      <input type="radio" id="color" name="color">
+      <label for="color">Cool Winter</label>
+      <input type="radio" id="color" name="color">
+      <label for="color">Bright Spring</label>
+      <input type="radio" id="color" name="color">
+      <label for="color">Light Summer</label>
+      <input type="radio" id="color" name="color">
+      <label for="color">Warm Autumn</label>
+    
+      <br/>
+      <br/>
+      <legend>A or B?</legend>
 
-    <button type="submit">Submit</button>
+      <input type="checkbox" id="A" name="A"value="A">
+      <label for="A">Decked Out Jewelry</label>
+
+      <input type="checkbox" id="B" name="B"value="B">
+      <label for="B">Delicate Dainty Jewelry</label>
+
+
+    </fieldset>
+    
+    
+    <br/><button type="submit">Submit</button>
 
   </form>
 
